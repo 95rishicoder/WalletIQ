@@ -1,1 +1,6 @@
 /Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/BackendApplication.java
+/Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/controller/ExpenseController.java
+/Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/controller/HealthController.java
+/Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/entity/Expense.java
+/Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/repository/ExpenseRepository.java
+/Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/service/ExpenseService.java
