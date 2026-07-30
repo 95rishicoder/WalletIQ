@@ -1,0 +1,25 @@
+import "./App.css";
+
+function App() {
+  return (
+    <div className="app">
+      <nav className="navbar">
+        <h2>WalletIQ</h2>
+
+        <button className="login-btn">Login</button>
+      </nav>
+
+      <section className="hero">
+        <h1>Smarter budgeting starts here.</h1>
+
+        <p>
+          Track expenses, build budgets, and understand where every dollar goes.
+        </p>
+
+        <button className="primary-btn">Get Started</button>
+      </section>
+    </div>
+  );
+}
+
+export default App;
