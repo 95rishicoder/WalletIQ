@@ -1,25 +1,11 @@
-import "./App.css";
-
-function App() {
-  return (
-    <div className="app">
-      <nav className="navbar">
-        <h2>WalletIQ</h2>
-
-        <button className="login-btn">Login</button>
-      </nav>
-
-      <section className="hero">
-        <h1>Smarter budgeting starts here.</h1>
-
-        <p>
-          Track expenses, build budgets, and understand where every dollar goes.
-        </p>
-
-        <button className="primary-btn">Get Started</button>
-      </section>
-    </div>
-  );
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
-export default App;
+body {
+    font-family: Inter, Arial, sans-serif;
+}

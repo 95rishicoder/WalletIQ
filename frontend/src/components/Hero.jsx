@@ -1,15 +1,34 @@
 function Hero() {
   return (
     <section className="hero">
-      <h1>Smarter budgeting starts here.</h1>
 
-      <p>
-        Track expenses, build budgets, and understand where every dollar goes.
-      </p>
+      <div className="hero-content">
 
-      <button className="primary-btn">
-        Get Started
-      </button>
+        <h1>
+          Spend Smarter.
+          <br />
+          Save More.
+          <br />
+          Live Better.
+        </h1>
+
+        <p>
+          Build healthier financial habits with intelligent budgeting,
+          spending insights, and simple tools that help you keep more of
+          what you earn.
+        </p>
+
+        <div className="hero-buttons">
+          <button className="primary-btn">
+            Start Free Trial
+          </button>
+
+          <button className="secondary-btn">
+            Watch Demo
+          </button>
+        </div>
+
+      </div>
     </section>
   );
 }

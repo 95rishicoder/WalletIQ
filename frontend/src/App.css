@@ -1,109 +1,600 @@
+/* ==========================================
+   WalletIQ v2
+   Global Styles + Background + Navbar
+========================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Inter, Arial, sans-serif;
-    background: #f8fafc;
-    color: #1e293b;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(37,99,235,.35),
+            transparent 35%),
+
+        radial-gradient(circle at top right,
+            rgba(124,58,237,.35),
+            transparent 40%),
+
+        radial-gradient(circle at bottom,
+            rgba(16,185,129,.30),
+            transparent 45%),
+
+        #07111f;
+}
+
+#root {
+    min-height: 100vh;
 }
 
 .app {
     min-height: 100vh;
+    position: relative;
 }
 
+/* ==========================================
+   Floating Background Glow
+========================================== */
+
+.app::before {
+
+    content: "";
+
+    position: fixed;
+
+    width: 650px;
+    height: 650px;
+
+    top: -250px;
+    left: -180px;
+
+    border-radius: 50%;
+
+    background: rgba(37,99,235,.25);
+
+    filter: blur(140px);
+
+    z-index: -2;
+}
+
+.app::after {
+
+    content: "";
+
+    position: fixed;
+
+    width: 700px;
+    height: 700px;
+
+    right: -220px;
+    bottom: -250px;
+
+    border-radius: 50%;
+
+    background: rgba(124,58,237,.22);
+
+    filter: blur(160px);
+
+    z-index: -2;
+}
+
+/* ==========================================
+   Navbar
+========================================== */
+
 .navbar {
+
+    width: calc(100% - 80px);
+
+    max-width: 1400px;
+
+    margin: 25px auto;
+
+    padding: 18px 35px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 25px 80px;
+    border-radius: 22px;
 
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255,255,255,.08);
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(22px);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.25);
 
     position: sticky;
-    top: 0;
+    top: 20px;
+
+    z-index: 100;
 }
 
 .navbar h2 {
-    color: #2563eb;
+
+    font-size: 1.8rem;
+
     font-weight: 800;
+
+    color: white;
+
+    letter-spacing: .5px;
 }
 
 .login-btn {
-    border: none;
-    background: white;
 
-    padding: 10px 20px;
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color: white;
+
+    padding: 12px 28px;
 
     border-radius: 999px;
 
     cursor: pointer;
 
-    transition: 0.25s;
+    font-weight: 700;
+
+    transition: .3s ease;
 }
 
 .login-btn:hover {
-    transform: translateY(-2px);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(124,58,237,.35);
 }
 
+/* ==========================================
+   Hero Section
+========================================== */
+
 .hero {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
 
-    margin-top: 120px;
+    padding: 110px 20px 70px;
+}
 
-    padding: 0 20px;
+.hero-content {
+
+    max-width: 900px;
+
+    margin: auto;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    max-width: 900px;
-    margin: auto;
 
-    color: #0f172a;
+    font-size: clamp(3.5rem, 8vw, 5.5rem);
+
     font-weight: 800;
-    line-height: 1.1;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    color: white;
 }
 
 .hero p {
-    margin-top: 25px;
 
-    font-size: 1.2rem;
+    margin-top: 35px;
 
-    color: #64748b;
+    font-size: 1.25rem;
 
-    max-width: 650px;
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.72);
+
+    max-width: 760px;
 
     margin-left: auto;
     margin-right: auto;
+}
 
-    line-height: 1.7;
+/* ==========================================
+   Hero Buttons
+========================================== */
+
+.hero-buttons {
+
+    margin-top: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
 }
 
 .primary-btn {
-    margin-top: 45px;
 
-    background: #2563eb;
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
 
     color: white;
 
     border: none;
 
-    padding: 18px 42px;
+    padding: 18px 40px;
 
     border-radius: 999px;
 
     font-size: 1rem;
 
+    font-weight: 700;
+
     cursor: pointer;
 
-    transition: 0.25s;
+    transition: .3s ease;
+
+    box-shadow: 0 15px 40px rgba(37,99,235,.35);
 }
 
 .primary-btn:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 20px 55px rgba(124,58,237,.45);
+}
+
+.secondary-btn {
+
+    background: rgba(255,255,255,.08);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.14);
+
+    backdrop-filter: blur(18px);
+
+    padding: 18px 40px;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.secondary-btn:hover {
+
+    transform: translateY(-4px);
+
+    background: rgba(255,255,255,.15);
+
+    border-color: rgba(255,255,255,.25);
+}
+
+/* ==========================================
+   Dashboard Preview
+========================================== */
+
+.dashboard-preview {
+
+    width: 92%;
+    max-width: 1400px;
+
+    margin: 80px auto 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+/* ==========================
+   Desktop Dashboard
+========================== */
+
+.desktop-preview {
+
+    flex: 1;
+    min-width: 700px;
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(22px);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.35);
+}
+
+.dashboard-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-header h3 {
+
+    font-size: 1.6rem;
+
+    color: white;
+}
+
+.dashboard-header span {
+
+    color: rgba(255,255,255,.6);
+}
+
+/* ==========================
+   Balance Card
+========================== */
+
+.balance-card {
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 18px 45px rgba(37,99,235,.35);
+}
+
+.balance-card h4 {
+
+    color: rgba(255,255,255,.8);
+
+    margin-bottom: 12px;
+
+    font-weight: 500;
+}
+
+.balance-card h2 {
+
+    color: white;
+
+    font-size: 2.8rem;
+
+    font-weight: 800;
+}
+
+/* ==========================
+   Stats Row
+========================== */
+
+.dashboard-row {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.mini-card {
+
+    flex: 1;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.mini-card:hover {
+
+    transform: translateY(-6px);
+
+    background: rgba(255,255,255,.08);
+}
+
+.mini-card h4 {
+
+    color: rgba(255,255,255,.7);
+
+    margin-bottom: 10px;
+}
+
+.mini-card p {
+
+    color: white;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+}
+
+/* ==========================
+   Mobile Preview
+========================== */
+
+.mobile-preview {
+
+    width: 300px;
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(22px);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 30px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.35);
+}
+
+.mobile-preview h4 {
+
+    color: white;
+
+    margin-bottom: 25px;
+
+    font-size: 1.3rem;
+}
+
+.mobile-balance {
+
+    background: rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+.mobile-button {
+
+    width: 100%;
+
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color: white;
+
+    padding: 16px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.mobile-button:hover {
+
     transform: translateY(-3px);
+}
+
+/* ==========================================
+   Mobile Dashboard Improvements
+========================================== */
+
+.phone-top{
+    width:70px;
+    height:8px;
+    background:rgba(255,255,255,.18);
+    border-radius:999px;
+    margin:0 auto 25px;
+}
+
+.progress-card{
+    margin:25px 0;
+}
+
+.progress-card p{
+    color:rgba(255,255,255,.7);
+    margin-bottom:10px;
+    font-size:.9rem;
+}
+
+.progress-bar{
+
+    height:10px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:999px;
+
+    overflow:hidden;
+}
+
+.progress-fill{
+
+    width:72%;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+}
+
+.recent-expense{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:25px 0;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.06);
+
+    color:white;
 }
