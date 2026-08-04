@@ -1,8 +1,8 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Hero from "./components/Landing/Hero";
 import Features from "./components/Features";
-import DashboardPreview from "./components/DashboardPreview";
+import DashboardPreview from "./components/Dashboard/DashboardPreview";
 
 function App() {
   return (

@@ -1,9 +1,21 @@
 function Navbar() {
   return (
     <nav className="navbar">
+
       <h2>WalletIQ</h2>
 
-      <button className="login-btn">Login</button>
+      <div className="nav-buttons">
+
+        <button className="login-btn">
+          Login
+        </button>
+
+        <button className="signup-btn">
+          Start Free Trial
+        </button>
+
+      </div>
+
     </nav>
   );
 }

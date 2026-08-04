@@ -19,6 +19,7 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
+
           <button className="primary-btn">
             Start Free Trial
           </button>
@@ -26,9 +27,11 @@ function Hero() {
           <button className="secondary-btn">
             Watch Demo
           </button>
+
         </div>
 
       </div>
+
     </section>
   );
 }

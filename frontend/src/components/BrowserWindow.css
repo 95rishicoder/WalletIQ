@@ -1,0 +1,97 @@
+.browser-window {
+
+    flex: 1;
+
+    background: rgba(255,255,255,.06);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow: 0 30px 70px rgba(0,0,0,.35);
+
+}
+
+.browser-toolbar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 14px 18px;
+
+    background: rgba(255,255,255,.05);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+}
+
+.browser-dots {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+.dot {
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+
+}
+
+.red {
+
+    background: #ff5f57;
+
+}
+
+.yellow {
+
+    background: #febc2e;
+
+}
+
+.green {
+
+    background: #28c840;
+
+}
+
+.browser-address {
+
+    flex: 1;
+
+    max-width: 450px;
+
+    margin-left: 20px;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.08);
+
+    color: rgba(255,255,255,.75);
+
+    font-size: .9rem;
+
+    text-align: center;
+
+}
+
+.browser-body {
+
+    padding: 0;
+
+}
