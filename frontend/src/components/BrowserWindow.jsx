@@ -15,7 +15,7 @@ function BrowserWindow({ children }) {
         </div>
 
         <div className="browser-address">
-          wallet.com
+          walletiq.com
         </div>
 
       </div>

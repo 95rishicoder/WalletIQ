@@ -1,0 +1,67 @@
+.hero {
+
+    width: 92%;
+
+    max-width: 1500px;
+
+    margin: 80px auto 120px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.25fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+.hero-left h1 {
+
+    font-size: clamp(3.5rem, 6vw, 5.8rem);
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+}
+
+.hero-left p {
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.72);
+
+    max-width: 540px;
+
+    margin-bottom: 40px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.hero-right {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}

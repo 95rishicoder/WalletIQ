@@ -1,0 +1,44 @@
+.phone-frame {
+
+    width: 280px;
+
+    position: absolute;
+
+    right: -70px;
+
+    bottom: -40px;
+
+    background: #111;
+
+    border-radius: 42px;
+
+    padding: 14px;
+
+    border: 2px solid rgba(255,255,255,.08);
+
+    box-shadow: 0 35px 90px rgba(0,0,0,.45);
+
+    z-index: 5;
+}
+
+.phone-notch {
+
+    width: 120px;
+
+    height: 26px;
+
+    background: #000;
+
+    border-radius: 20px;
+
+    margin: 0 auto 20px;
+}
+
+.phone-screen {
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    background: #1a1a1a;
+}

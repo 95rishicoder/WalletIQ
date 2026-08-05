@@ -1,3 +1,5 @@
+import "./PhoneMockup.css";
+
 function PhoneMockup({ children }) {
   return (
     <div className="phone-frame">

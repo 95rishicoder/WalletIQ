@@ -1,18 +1,33 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="navbar">
 
-      <h2>WalletIQ</h2>
+      <Link
+        to="/"
+        style={{ textDecoration: "none" }}
+      >
+        <h2>WalletIQ</h2>
+      </Link>
 
       <div className="nav-buttons">
 
-        <button className="login-btn">
-          Login
-        </button>
+        <Link to="/login">
 
-        <button className="signup-btn">
-          Start Free Trial
-        </button>
+          <button className="login-btn">
+            Login
+          </button>
+
+        </Link>
+
+        <Link to="/signup">
+
+          <button className="signup-btn">
+            Start Free Trial
+          </button>
+
+        </Link>
 
       </div>
 

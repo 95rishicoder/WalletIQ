@@ -1,0 +1,65 @@
+.footer {
+
+    width: 100%;
+
+    padding: 80px 10% 40px;
+
+    margin-top: 120px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+
+}
+
+.footer-top h2,
+.footer-top h4 {
+
+    color: white;
+
+    margin-bottom: 18px;
+
+}
+
+.footer-top p,
+.footer-top a {
+
+    color: rgba(255,255,255,.7);
+
+    text-decoration: none;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+}
+
+.footer-top a:hover {
+
+    color: white;
+
+}
+
+.footer-bottom {
+
+    margin-top: 50px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    color: rgba(255,255,255,.5);
+
+    text-align: center;
+
+}

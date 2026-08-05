@@ -1,8 +1,12 @@
+import "./Hero.css";
+
+import DashboardPreview from "../Dashboard/DashboardPreview";
+
 function Hero() {
   return (
     <section className="hero">
 
-      <div className="hero-content">
+      <div className="hero-left">
 
         <h1>
           Spend Smarter.
@@ -14,8 +18,8 @@ function Hero() {
 
         <p>
           Build healthier financial habits with intelligent budgeting,
-          spending insights, and simple tools that help you keep more of
-          what you earn.
+          spending insights, and simple tools that help you keep more
+          of what you earn.
         </p>
 
         <div className="hero-buttons">
@@ -29,6 +33,12 @@ function Hero() {
           </button>
 
         </div>
+
+      </div>
+
+      <div className="hero-right">
+
+        <DashboardPreview />
 
       </div>
 
