@@ -2,6 +2,7 @@ import "./Dashboard.css";
 
 import Sidebar from "./Sidebar";
 import Header from "./Header";
+import WelcomeSection from "./WelcomeSection";
 
 function DashboardLayout() {
   return (
@@ -14,6 +15,9 @@ function DashboardLayout() {
         <Header />
 
         <main className="dashboard-content">
+
+          <WelcomeSection />
+
         </main>
 
       </div>

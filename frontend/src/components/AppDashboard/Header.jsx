@@ -1,0 +1,32 @@
+import "./Header.css";
+
+function Header() {
+  return (
+    <header className="dashboard-header">
+
+      <div>
+        <h1>Dashboard</h1>
+
+        <p>
+          Manage your money in one place.
+        </p>
+      </div>
+
+      <div className="header-actions">
+
+        <button className="notification-btn">
+          🔔
+        </button>
+
+        <button className="profile-btn">
+          👤
+          <span>User</span>
+        </button>
+
+      </div>
+
+    </header>
+  );
+}
+
+export default Header;
