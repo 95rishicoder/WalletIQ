@@ -3,6 +3,7 @@ import "./Dashboard.css";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 import WelcomeSection from "./WelcomeSection";
+import PlaidLinkButton from "../PlaidLinkButton";
 
 function DashboardLayout() {
   return (
@@ -17,6 +18,10 @@ function DashboardLayout() {
         <main className="dashboard-content">
 
           <WelcomeSection />
+
+          <div className="plaid-connect-section">
+            <PlaidLinkButton />
+          </div>
 
         </main>
 

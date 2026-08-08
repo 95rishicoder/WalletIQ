@@ -1,6 +1,8 @@
 /Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/BackendApplication.java
+/Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/config/PlaidConfig.java
 /Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/controller/ExpenseController.java
 /Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/controller/HealthController.java
+/Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/controller/PlaidController.java
 /Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/controller/UserController.java
 /Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/dto/LoginRequest.java
 /Users/rishiagarwal/Projects/WalletIQ/backend/src/main/java/com/walletiq/backend/entity/Expense.java
