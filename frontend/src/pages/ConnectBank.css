@@ -1,0 +1,94 @@
+.connect-bank-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f8fafc;
+}
+
+.connect-bank-card {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  border-radius: 20px;
+  padding: 48px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.connect-bank-logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.connect-bank-card h1 {
+  margin: 0 0 12px;
+  font-size: 36px;
+}
+
+.connect-bank-subtitle {
+  margin: 0 0 32px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.connect-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 32px;
+}
+
+.connect-benefit {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.benefit-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.connect-benefit h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.connect-benefit p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.connect-bank-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.connect-bank-action button {
+  width: 100%;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.connect-bank-action button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.connect-bank-note {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+}

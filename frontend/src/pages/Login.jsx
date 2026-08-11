@@ -46,7 +46,7 @@ function Login() {
 
         alert("Login successful!");
 
-        navigate("/dashboard");
+        navigate("/connect-bank");
 
       } else {
 
