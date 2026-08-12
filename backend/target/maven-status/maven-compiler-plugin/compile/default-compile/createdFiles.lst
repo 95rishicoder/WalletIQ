@@ -1,8 +1,9 @@
 com/walletiq/backend/BackendApplication.class
-com/walletiq/backend/controller/PlaidController.class
+com/walletiq/backend/config/StripeConfig.class
+com/walletiq/backend/controller/StripeController.class
 com/walletiq/backend/controller/HealthController.class
 com/walletiq/backend/dto/LoginRequest.class
-com/walletiq/backend/config/PlaidConfig.class
+com/walletiq/backend/service/StripeService.class
 com/walletiq/backend/entity/Expense$ExpenseBuilder.class
 com/walletiq/backend/entity/Expense.class
 com/walletiq/backend/entity/User.class
@@ -12,3 +13,4 @@ com/walletiq/backend/repository/UserRepository.class
 com/walletiq/backend/repository/ExpenseRepository.class
 com/walletiq/backend/controller/ExpenseController.class
 com/walletiq/backend/controller/UserController.class
+com/walletiq/backend/controller/StripeWebhookController.class
